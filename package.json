@@ -1,0 +1,52 @@
+{
+  "name": "@dllobell/aria-elements",
+  "version": "0.1.0",
+  "author": "David Llobell <dllobellmoya@gmail.com>",
+  "homepage": "https://github.com/dllobell/aria-elements",
+  "repository": "github:dllobell/aria-elements",
+  "license": "ISC",
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.2.4",
+    "@storybook/addon-docs": "^10.2.4",
+    "@storybook/addon-vitest": "^10.2.4",
+    "@storybook/web-components-vite": "^10.2.4",
+    "@tailwindcss/vite": "^4.1.18",
+    "@vitest/browser-playwright": "^4.0.18",
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vue/reactivity": "^3.5.27",
+    "globals": "^17.3.0",
+    "jiti": "^2.6.1",
+    "lit": "^3.3.2",
+    "playwright": "^1.58.1",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "storybook": "^10.2.4",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.18"
+  }
+}
